@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tables in HTML</h1>
+    <!-- <hr /> -->
+    <h2>Heaviest living bird species - 1</h2>
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th>Animal</th>
+            <th>Average mass[kg/lbs]</th>
+            <th>Maximum mass[kg/lbs]</th>
+            <th>Flighted</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ostrich</td>
+            <td>105(230)</td>
+            <td>158.8(346)</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>Somali Ostrich</td>
+            <td>90(200)</td>
+            <td></td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>Wild turkey</td>
+            <td>13.5(29.8)</td>
+            <td>39(86)</td>
+            <td>Yes</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <h2>Heaviest living bird species - 2</h2>
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th rowspan="2">Animal</th>
+            <th colspan="2 ">Average mass</th>
+            <!-- <th>Maximum mass[kg/lbs]</th> -->
+
+            <th rowspan="2">Flighted</th>
+          </tr>
+          <tr>
+            <th>kgs</th>
+            <th>lbs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ostrich</td>
+            <td>105</td>
+            <td>230</td>
+            <!-- <td>158.8(346)</td> -->
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>Somali Ostrich</td>
+            <td>90</td>
+            <td>200</td>
+            <!-- <td></td> -->
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>Wild turkey</td>
+            <td>13.5</td>
+            <td>(29.8)</td>
+            <!-- <td>39(86)</td> -->
+            <td>Yes</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <hr />
+    <h1>Forms in HTML</h1>
+    <section>
+      <form action="/about">
+        <label for="1">Please enter name</label>
+        <input type="text" placeholder="text" id="1" /><br />
+        <label for="2">Please enter password</label>
+        <input type="password" placeholder="password" id="2" /><br />
+        <label for="clr">Please select a color</label>
+        <input type="color" placeholder="color" id="clr" /><br />
+        <label for="3">Please select date</label>
+        <input type="date" placeholder="date" id="3" />
+        <!-- Other format -->
+        <br />
+        <label>
+          Please enter email
+          <input type="email" placeholder="e-mail" />
+        </label>
+      </form>
+    </section>
+  </body>
+</html>
