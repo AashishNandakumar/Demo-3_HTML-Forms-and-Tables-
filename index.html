@@ -85,7 +85,7 @@
     <section>
       <form action="/about">
         <label for="1">Please enter name</label>
-        <input type="text" placeholder="text" id="1" /><br />
+        <input type="text" placeholder="text" id="1" name="username" /><br />
         <label for="2">Please enter password</label>
         <input type="password" placeholder="password" id="2" /><br />
         <label for="clr">Please select a color</label>
@@ -96,8 +96,85 @@
         <br />
         <label>
           Please enter email
-          <input type="email" placeholder="e-mail" />
+          <input type="email" placeholder="e-mail" name="email" />
         </label>
+        <br />
+        <button type="button">Submit</button>
+        <input type="submit" value="Click me!" />
+      </form>
+    </section>
+    <hr />
+    <!-- When text is entered, it is directly sent to the google server -->
+    <section>
+      <h2>Google</h2>
+      <form action="https://google.com/search">
+        <input type="text" name="q" />
+        <button>Search</button>
+      </form>
+    </section>
+    <!-- <hr /> -->
+    <section>
+      <h2>Youtube</h2>
+      <!-- https://www.youtube.com/results?search_query=ai -->
+      <p>Search for any videos</p>
+      <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query" />
+        <!-- Button not important, just click enter in the input form -->
+        <!-- <button>Search</button> -->
+      </form>
+    </section>
+    <section>
+      <h2>Search any course on udemy</h2>
+      <!-- https://www.udemy.com/courses/search/?q=ai -->
+      <form action="https://www.udemy.com/courses/search/">
+        <!-- <label>Search for a course</label> -->
+        <input type="text" name="q" />
+        <button>Search</button>
+      </form>
+    </section>
+    <hr />
+
+    <section>
+      <h2>Input</h2>
+      <p>Different other types of inputs</p>
+      <form action="goerli">
+        <label>
+          Are u studying engineering?
+          <input type="checkbox" checked />
+        </label>
+        <br />
+        <label>
+          Do u like it? <label>Yes</label>
+          <!-- To group radio buttons use attribute name(so any one will be selected) -->
+          <!-- use attribute value, to ge to know what radio button is selected -->
+          <input type="radio" name="validation" value="Yes" />
+          <label>No</label>
+          <input type="radio" name="validation" value="No" />
+        </label>
+        <br />
+        <label for="D">Choose a network</label>
+        <select name="net" id="D">
+          <option>--select--</option>
+          <option value="goerli">GOERLI</option>
+          <!-- makes MAINNet default selected -->
+          <option selected>MAINNET</option>
+          <option>SEPOLIA</option>
+        </select>
+        <br />
+        <label for="file1">Select a PF</label>
+        <input type="file" id="file1" accept="image/png, image/jpeg" />
+        <br />
+        <lable for="ta">Please leave a msg</lable>
+        <textarea
+          id="ta"
+          cols="30"
+          rows="10"
+          placeholder="A nice reply"
+          autocorrect="on"
+        >
+        </textarea>
+        <br />
+        <button>Submit</button>
       </form>
     </section>
   </body>
