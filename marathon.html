@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5k-Marathon</title>
+  </head>
+  <body>
+    <h1 align="center">Register for 5k-Marathon</h1>
+    <hr />
+    <br />
+    <form action="">
+      <section align="center">
+        <section align="center">
+          <label for="fname">First name</label>
+          <input id="fname" type="text" required placeholder="joe" />
+          <label for="lname">Last name</label>
+          <input id="lname" type="text" required placeholder="doe" />
+        </section>
+        <br />
+        <section align="center">
+          <p><b>Select a race:</b></p>
+          <input type="radio" id="F" name="s" value="5k" /><label for="F"
+            >Fun Run 5k</label
+          ><br />
+          <input type="radio" id="H" name="s" value="half" /><label for="H"
+            >Half Marathon</label
+          ><br />
+          <input type="radio" id="Fu" name="s" value="full" /><label for="Fu"
+            >Full Marathon</label
+          ><br />
+        </section>
+        <br />
+        <section align="center">
+          <label for="email">Email</label
+          ><input
+            id="email"
+            type="email"
+            required
+            placeholder="xyz@gmail.com"
+          />
+          <label for="pwd">Password</label
+          ><input
+            id="pwd"
+            type="password"
+            minlength="5"
+            maxlength="10"
+            required
+            placeholder="xyz123@ok"
+          />
+        </section>
+        <br />
+        <section align="center">
+          <p><b>Select age group</b></p>
+          <select name="sel">
+            <option selected>Under 18</option>
+            <option>18-40</option>
+            <option>40+</option>
+          </select>
+        </section>
+        <br />
+        <button>Submit</button>
+      </section>
+    </form>
+  </body>
+</html>
+
+<!-- http://127.0.0.1:5500/Section_5/marathon.html?sel=Under+18 -->
